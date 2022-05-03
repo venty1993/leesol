@@ -1,0 +1,94 @@
+header {
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 2px solid black;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+header h1 {
+    width: 200px;
+    line-height: 100px;
+    background-color: yellow;
+    float: left;
+    text-align: center;
+}
+
+nav {
+    float: right;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+nav ul {
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+nav ul:nth-of-type(1) li {
+    float: left;
+    padding-left: 20px;
+    background-color: yellow;
+    line-height: 30px;
+}
+
+nav ul:nth-of-type(2) li {
+    float: left;
+    padding-left: 20px;
+    background-color: orange;
+    line-height: 30px;
+    margin-top: 40px;
+}
+
+main {
+    width: 1000px;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+main section {
+    width: 700px;
+    overflow: hidden;
+    float: left;
+}
+
+main section article {
+    width: 700px;
+    border: 2px solid black;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+article>h2 {
+    background-color: antiquewhite;
+}
+
+aside {
+    width: 270px;
+    float: right;
+    overflow: hidden;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+aside .bannerbox{
+    background-color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 1000px;
+    height: 50px;
+    line-height: 50px;
+    margin: 10px auto;
+    border: 2px solid black;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}

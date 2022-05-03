@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none
+}
+
+img {
+    display: block;
+    border: none;
+}
+
+body {
+    font-family: 'Verdana';
+    font-size: 14px;
+    color: black;
+    line-height: 28px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Keat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 300px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+        }
+
+        .scroll-x-y {
+            overflow: scroll;
+        }
+
+        .scroll-x {
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        
+        .scroll-y {
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="box scroll-x-y">
+        <h4>SCROLL</h4>
+        <p><img src="../img/111500268.2.jpg" alt="대체텍스트"></p>
+    </div>
+    <div class="box scroll-x">
+        <h4>SCROLL-X</h4>
+        <p><img src="../img/111500268.2.jpg" alt="2"></p>
+    </div>
+    <div class="box scroll-y">
+        <h4>SCROLL</h4>
+        <p><img src="../img/111500268.2.jpg" alt="3"></p>
+    </div>
+    <figure>
+        <img src="../img/111500268.2.jpg" alt="강아지">
+        <figcaption>설명</figcaption>
+    </figure>
+</body>
+</html>

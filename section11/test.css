@@ -1,0 +1,114 @@
+:root {
+    --margin : 16px;
+    --padding : 16px;
+    --mini-margin : 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    border:  1px solid black;
+    height: 100px;
+    margin-top: var(--margin);
+}
+
+h1 {
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    line-height: 100px;
+    text-align: center;
+    float: left;
+}
+
+nav {
+    float: right;
+    background-color: antiquewhite;
+    height: 100px;
+}
+
+nav ul {
+    overflow: hidden;
+    background-color: yellow;
+}
+
+nav li {
+    float: left;
+    padding: 0 4px;
+    margin: 0 8px;
+    line-height: 30px;
+}
+
+nav > ul:last-child {
+    margin-top: 40px;
+    background-color: orange;
+}
+
+main {
+    overflow: hidden;
+}
+
+main > * {
+    float: left;
+}
+
+main > section {
+    width: 738px;
+}
+
+main > section > article {
+    height: 150px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-top: var(--margin);
+    padding: var(--padding);
+}
+
+article > h2 {
+    background-color: antiquewhite;
+
+}
+
+h2 + p {
+    margin-top: var(--mini-margin);
+}
+
+main > aside {
+    width: 246px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-top: var(--margin);
+    margin-left: var(--margin);
+    padding: var(--padding);
+}
+
+aside > input {
+    width: 124px;
+}
+
+aside > .banner-box {
+    background-color: grey;
+    padding: var(--padding);
+    margin-top: var(--margin);
+}
+
+footer {
+    padding: var(--padding);
+    clear: both;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    margin-top: var(--margin);
+    text-align: center;
+}
