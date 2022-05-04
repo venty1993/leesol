@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    table {
+        empty-cells: hide;
+    }
+    td {
+        border: 1px solid black;
+        width: 100px;
+        height: 50px;
+    }
+
+    /* tr:first-child{
+        background-color: yellow;
+    } */
+
+        td:first-child {
+            background-color: orange;
+        }
+        td:nth-of-type(2),td:nth-of-type(3) {
+            background-color: red;
+        }
+</style>
+<body>
+    <table>
+
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>2</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>3</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>4</td>
+        </tr>
+    </table>
+</body>
+</html>
