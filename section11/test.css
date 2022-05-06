@@ -85,6 +85,17 @@ h2 + p {
     margin-top: var(--mini-margin);
 }
 
+h2 + p {
+    /* 묶음 안에서 h2 바로 뒤에오는 p */
+}
+h2 ~ p {
+    /* 묶음 안에서 h2 뒤에 오는 p */
+}
+
+h2, p {
+    margin-top: var(--mini-margin);
+}
+
 main > aside {
     width: 246px;
     box-sizing: border-box;
