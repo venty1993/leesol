@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title></title>
+    <title>Document</title>
     <style>
-        #ffff{
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .red {
             background-color: red;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 50px;
+        }
+
+        .blue {
+            background-color: blue;
+            width: 150px;
+            height: 150px;
         }
     </style>
 </head>
 <body>
-    <form action="">
-
-        <input type="text">
-        <input type="url">
-        <input type="email">
-
-        <input type="submit" value="전송">
-
-    </form>
+   <div class="red"></div>
+   <div class="blue"></div>
 </body>
 </html>
