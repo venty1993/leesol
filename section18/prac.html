@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li{
+            list-style: none;
+        }
+        .container {
+            width: 500px;
+            height: 300px;
+            background-color: #cfcfcf;
+            position: relative;
+        }
+        
+        .wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .roading {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: white 5px solid;
+            border-top: red 5px solid;
+            animation: roading1 1s infinite;
+            
+        }
+
+        @keyframes roading1 {
+            from {
+                transform: rotate(0);
+
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .letter {
+            width: 150px;
+            height: 200px;
+            margin-top: 50px;
+            margin-left: 50px;
+            position: relative;
+            display: flex;
+        }
+
+        .stroke1{
+            position: relative;
+            top: 0;
+            width: 50px;
+            background-color: tomato;
+            animation: stroke1 5s alternate infinite;
+        }
+        .stroke2{
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 50px;
+            background-color: tomato;
+            animation: stroke2 5s alternate infinite;
+        }
+        .stroke3{
+            position: relative;
+            width: 50px;
+            height: 0px;
+            background-color: tomato;
+            animation: stroke3 5s alternate infinite;
+        }
+
+
+        @keyframes stroke1 {
+            from{
+                height: 0px;
+            }
+
+            20% {
+                height: 200px;
+            }
+
+            to{ 
+                height: 200px;
+            }
+            
+        }
+        @keyframes stroke2 {
+            20% {
+                width: 0px;
+            }
+            40% {
+                width: 50px;
+            }
+            
+            to{ 
+                width: 50px;
+            }
+            
+        }
+        @keyframes stroke3 {
+            40%{
+                height: 0px;
+            }
+
+            60% {
+                height: 200px;
+            }
+
+            to{ 
+                height: 200px;
+            }
+            
+        }
+
+
+        .container3{
+            float: left;
+            width: 300px;
+            height: 300px;
+            background-color: #565656;
+            margin: 20px;
+            position: relative;
+        }
+
+        .animation-container {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .finding{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            animation-name: find;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform: scale(0);
+        }
+
+        .finding:nth-child(2){
+            animation-delay: 0.2s;
+        }
+        .finding:nth-child(3){
+            animation-delay: 0.4s;
+        }
+
+        @keyframes find {
+            from{
+                transform: scale(0);
+                opacity: 1;
+            }
+            to{
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+
+        .center-bottom{
+            position: absolute;
+            left: 50%;
+            top: 70%;
+            transform: translateX(-50%);
+            animation: drag 2s infinite;
+
+        }
+        .mouse{
+            border: 2px solid white;
+            box-sizing: border-box;
+            width: 20px;
+            height: 30px;
+            border-radius: 10px;
+        }
+
+        .wheel{
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20%;
+            animation: wheeling 2s infinite
+        }
+
+        @keyframes drag {
+            from{
+                top: 70%;
+                transform: scale(0.8) translateX(-50%);
+                opacity: 0;
+            }
+            
+            20% {
+                top: 70%;
+                transform: scale(1) translateX(-50%);
+                opacity: 1;
+            }
+
+            50%{
+                top: 75%;
+                opacity: 1;
+            }
+            
+            to{
+                opacity: 0;
+                top: 75%;
+            }
+        }
+
+        @keyframes wheeling {
+            from {
+                top:20%;
+            }
+            20% {
+                top: 20%;
+            }
+            50%{
+                top: 60%;
+            }
+            to{
+                top: 60%;
+            }
+        } 
+
+        .circle{
+            background-image:conic-gradient(tomato 0deg, #00000000 0deg);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            transition: 2s;
+            /* animation: donut 2s infinite; */
+        }
+        .circle-inner{
+            width: 80px;
+            height: 80px;
+            background-color: #cfcfcf;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            line-height: 80px;
+        }
+
+        @keyframes donut {
+            from {
+                background-image:conic-gradient(tomato 0deg, #00000000 0deg);
+            }
+
+            to {
+                background-image:conic-gradient(#ffffff 359deg, #00000000 0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container3">
+        <div class="wrap">
+            <div class="roading"></div>
+        </div>
+    </div>
+
+    <div class="container3">
+        <ul class="letter">
+            <li class="stroke1"></li>
+            <li class="stroke2"></li>
+            <li class="stroke3"></li>
+        </ul>
+    </div>
+
+    <div class="container3">
+        <div class="animation-container">
+            <div class="finding"></div>
+            <div class="finding"></div>
+            <div class="finding"></div>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="center-bottom">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

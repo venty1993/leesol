@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+         .container {
+            background-color: gray;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ani-wrapper {
+            width: 100px;
+            height: 100px;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            animation: ping 2s infinite;
+        }
+
+        .circle:nth-child(2){
+            animation-delay: 0.2s;
+        }
+        .circle:nth-child(3){
+            animation-delay: 0.4s;
+        }
+
+        @keyframes ping {
+            from{
+                opacity: 1;
+                transform: scale(0);
+            }
+            to{
+                opacity: 0;
+                transform: scale(1);
+
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ani-wrapper">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+</body>
+</html>
