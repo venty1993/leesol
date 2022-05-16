@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header {
+            /* width: 100%; 원래 블록 기본값이다..*/
+            height: 46px;
+            background-image: url(img/header_background.png);
+            /* background-repeat: no-repeat; */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo {
+            width: 100px;
+            height: 32px;
+            line-height: 32px;
+            margin: 7px auto;
+            overflow: hidden;
+            text-align: center;
+            font-family: 'tahoma', sans-serif;
+            color: white;
+        }
+
+        .left {
+            position: absolute;
+            top: 7px;
+            left: 10px;
+            width: 62px;
+            height: 32px;
+            background-color: green;
+            display: block;
+            font-size: 0;
+            background-image: url(img/sprites.png);
+        }
+
+        .right {
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            right: 10px;
+            top: 7px;
+            background-image: url(img/sprites.png);
+            background-color: red;
+            display: block;
+            font-size: 0;
+            background-position: -62px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="left">LEFT</a>
+        <h1 class="logo">LOGO</h1>
+        <a href="#" class="right">RIGHT</a>
+    </header>
+</body>
+</html>

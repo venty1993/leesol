@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .logo {
+            display: block;
+            width: 100px;
+            height: 50px;
+            margin: 0 auto;
+            background: linear-gradient(to top, #83a4d4, #b6fbff);
+        }
+
+        .hidden {
+            /* 
+            1. font-size : 0 으로 숨긴다 
+            2. visibility : hidden
+            3. display : none
+            4. opacity : 0 
+            5. text-indent : -9999px
+            6. width :0 or height 0
+
+            위 방법들은 다 문제가 있다..!
+            */
+
+            overflow: hidden;
+            width: 1px;
+            height: 1px;
+            clip: rect(1px, 1px, 1px, 1px);
+            clip-path: inset(50%);
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="logo"><span class="hidden">SBS</span></a>
+</body>
+</html>
