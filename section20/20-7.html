@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 90%;
+            margin: 0 auto;
+            border: 4px solid black;
+            overflow: hidden;
+        }
+
+        #wrap div {
+            float: left;
+            height: 100px;
+        }
+
+        #wrap div:first-child {
+            background-color: aqua;
+        }
+
+        #wrap div:nth-child(2){
+            background-color: goldenrod;
+        }
+        #wrap div:nth-child(3){
+            background-color: yellowgreen;
+        }
+        #wrap div:nth-child(4){
+            background-color: royalblue;
+        }
+        #wrap div:nth-child(5){
+            background-color: mediumorchid;
+        }
+
+        @media screen and (min-width:320px) {
+            #wrap div {
+                width: 100%
+            };
+        }
+        @media screen and (min-width:768px) {
+            #wrap div {
+                width: 50%;
+            }
+            #wrap div:last-child {
+                width: 100%;
+            }
+        }
+        @media screen and (min-width:1024px) {
+            #wrap div {
+                width: 20%;
+            }
+
+            #wrap div:last-child {
+                width: 20%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+</html>

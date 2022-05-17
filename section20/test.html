@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .첫번째{
+            font-size: 1.5em;
+            /* 기준인 16px * 1.5 = 24px */
+        }
+
+        .두번째{
+            font-size: 1.5em;
+            /* 부모(.첫번째) 의 폰트사이즈 24 * 1.5 = 36px */
+        }
+
+        .세번째{
+            font-size: 1.5em;
+            /*  부모(.두번째)의 폰트사이즈 36*1.5 = 54px */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="첫번째">
+        <span>안녕하세요</span>
+        <div class="두번째">
+            <span>안녕하세요</span>
+            <div class="세번째">
+                <span>안녕하세요</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
