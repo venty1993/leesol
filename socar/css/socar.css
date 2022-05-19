@@ -1,0 +1,120 @@
+:root {
+    --main-color: #0BB8FF;
+    --font-white: #fff;
+    --font-black: #374553;
+    --font-gray: #AAAAAA;
+    --font-footer-light: #C5C8Ce;
+    --font-footer-dark: #646F7C;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+h1 figure {
+    position: relative;
+    width: 112px;
+    margin-left: 40px;
+    margin-top: 18px;
+    float: left;
+    
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+}
+
+.hamberger-wrapper {
+    width: 36px;
+    height: 36px;
+    margin-top: 12px;
+    margin-right: 40px;
+    float: right;
+}
+
+.hamberger-wrapper::before {
+    display: block;
+    content: '';
+    background-color: white;
+    height: 4px;
+    width: 26px;
+    margin-top: 10px;
+}
+.hamberger-wrapper::after {
+    display: block;
+    content: '';
+    background-color: white;
+    height: 4px;
+    width: 26px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+#main-title {
+    /* 브라우저 height값의 100%만큼 높이 지정 */
+    height: 100vh;
+    background-image: url(../img/main_visual_fullscreen.jpg);
+    position: relative;
+}
+
+.main-title-heading {
+    font-size: 64px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#introduce {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#introduce > article {
+    margin-top: 120px;
+}
+
+.introduce-title {
+    display: inline-block;
+    font-size: 40px;
+    color: var(--font-black);
+    font-weight: 900;
+    position: relative;
+}
+
+.introduce-title::after {
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    position: absolute;
+    right: -12px;
+    bottom: 0;
+}
+
+.introduce-contents {
+    margin-top: 24px;
+    font-size: 18px;
+    color: var(--font-gray);
+    font-weight: 900;
+    line-height: 24px;
+}
+
+#introduce figure {
+    margin-top: 40px;
+}
