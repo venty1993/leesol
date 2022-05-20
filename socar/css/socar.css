@@ -5,6 +5,18 @@
     --font-gray: #AAAAAA;
     --font-footer-light: #C5C8Ce;
     --font-footer-dark: #646F7C;
+    --background-color-gray: #F7F8F9;
+    --footer-bacground-color: #28323C;
+}
+
+@font-face {
+    font-family: 'Happiness-Sans-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
+    font-style: normal;
+}
+
+html {
+    font-family: 'Happiness-Sans-Bold';
 }
 
 header {
@@ -117,4 +129,117 @@ h1 figure {
 
 #introduce figure {
     margin-top: 40px;
+}
+
+#now-start {
+    background-color: var(--background-color-gray);
+    height: 444px;
+    position: relative;
+    overflow: hidden;
+}
+
+#now-start>p {
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--font-gray);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.count-up {
+    color: var(--main-color);
+}
+
+#now-start .accent {
+    color: var(--main-color);
+}
+
+#now-start::after {
+    display: block;
+    content: '';
+    height: 100%;
+    width: 50%;
+    background-color: #0BB8FF;
+    transform: skewX(-30deg);
+    position: absolute;
+    right: -200px;
+}
+
+footer {
+    background-color: var(--footer-bacground-color);
+}
+
+.footer-container {
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 48px;
+    padding-bottom : 96px
+
+}
+
+.sns-icons {
+    overflow: hidden;
+}
+
+.sns-icons li {
+    float: left;
+    margin-right: 12px;
+}
+
+.footer-nav {
+    margin-top: 24px;
+    overflow: hidden;
+}
+
+.footer-nav li {
+    float: left;
+    margin-right: 24px;
+}
+
+.footer-nav a {
+    color: var(--font-footer-light)
+}
+
+.footer-nav .accent {
+    color :#FFF;
+}
+
+.corp-area {
+    margin-top: 24px;
+    overflow: hidden;
+    color: var(--font-footer-dark);
+    font-size: 13px;
+}
+
+.corp-area>ul {
+    float: left;
+    width: 50%;
+}
+
+.corp-area li {
+    margin-bottom: 8px;
+}
+
+.corp-area dl {
+    overflow:hidden;
+}
+
+.corp-area dl>* {
+    float: left;
+}
+
+.corp-area dt {
+    margin-right: 4px;
+}
+
+.corp-area dt::after {
+    content:'.';
+}
+
+.corp-right a {
+    color: var(--font-footer-light);
+    text-decoration: underline;
 }
