@@ -1,0 +1,9 @@
+.container {
+    border: 1px solid red;
+    display: grid;
+}
+
+.item {
+    border: 1px solid black;
+    background-color: gray;
+}

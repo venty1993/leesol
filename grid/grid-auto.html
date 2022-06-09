@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      .container {
+        display: grid;
+        /* grid-template-columns: repeat(auto-fill, minmax(20%, auto)); */
+        /* grid-template-columns: 20% 20% 20% 20% 20% */
+        /* 만약 컨텐츠가 5개 미만이라면 공간이 남는다!*/
+        grid-template-columns: repeat(auto-fit, minmax(20%, auto));
+        border: 1px solid red;
+      }
+
+      .item {
+        border: 1px solid black;
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <!-- <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+      <div class="item">18</div>
+      <div class="item">19</div>
+      <div class="item">20</div> -->
+    </div>
+  </body>
+</html>
