@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .days-container {
+        overflow: hidden;
+      }
+
+      .days-container > input {
+        display: none;
+      }
+      label {
+        display: block;
+        background-color: aqua;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        /* height: 200px; */
+      }
+      ul {
+        transform: translateY(-100px);
+        position: absolute;
+        z-index: -1;
+        visibility: hidden;
+      }
+
+      .days-container > input:checked + ul {
+        transition: 0.5s;
+        transform: none;
+        visibility: visible;
+        position: static;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="days-container">
+        <label for="hi">오늘의 할일</label>
+        <input type="checkbox" name="" id="hi" />
+        <ul>
+          <li>밥먹기</li>
+          <li>잠자기</li>
+          <li>숨쉬기</li>
+          <li>tv보기</li>
+          <li>게임하기</li>
+        </ul>
+      </div>
+      <div class="days-container">
+        <label for="next">내일의 할일</label>
+        <input type="checkbox" name="" id="next" />
+        <ul>
+          <li>밥먹기</li>
+          <li>잠자기</li>
+          <li>숨쉬기</li>
+          <li>tv보기</li>
+          <li>게임하기</li>
+        </ul>
+      </div>
+      <div class="days-container">
+        <label for="next-next">모레 할일</label>
+        <input type="checkbox" name="" id="next-next" />
+        <ul>
+          <li>밥먹기</li>
+          <li>잠자기</li>
+          <li>숨쉬기</li>
+          <li>tv보기</li>
+          <li>게임하기</li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
